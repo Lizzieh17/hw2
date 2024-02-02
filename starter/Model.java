@@ -12,14 +12,18 @@ public class Model
 	public void update()
 	{
 		// Move the turtle
-		if(this.turtleX < this.destX)
-			this.turtleX += 1;
-		else if(this.turtleX > this.destX)
-			this.turtleX -= 1;
-		if(this.turtleY < this.destY)
-			this.turtleY += 1;
-		else if(this.turtleY > this.destY)
-			this.turtleY -= 1;
+		if(this.turtleX < this.destX){
+			this.turtleX += Math.min(4, destX - turtleX);
+		}
+		else if(this.turtleX > this.destX){
+			this.turtleX -= Math.min(4, destX - turtleX);
+		}
+		if(this.turtleY < this.destY){
+			this.turtleY += Math.min(4, destX - turtleX);
+		}
+		else if(this.turtleY > this.destY){
+			this.turtleY -= Math.min(4, destX - turtleX);
+		}
 	}
 
 	public void setDestination(int x, int y)
