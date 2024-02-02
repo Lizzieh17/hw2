@@ -11,6 +11,13 @@ public class Controller implements ActionListener
 
 	public void actionPerformed(ActionEvent e)
 	{
-		System.out.println("Hey! I said not to push that button!");
+		// System.out.println("Hey! I said not to push that button!");
+		view.removeButton();
+	}
+
+	private View view;
+
+	void setView(View v){
+		view = v;
 	}
 }
