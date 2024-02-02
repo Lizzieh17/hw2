@@ -5,8 +5,12 @@ import java.awt.event.ActionEvent;
 
 public class Controller implements ActionListener
 {
-	public Controller()
+	private View view;
+	private Model model;
+
+	public Controller(Model m)
 	{
+		model = m;
 	}
 
 	public void actionPerformed(ActionEvent e)
@@ -14,8 +18,6 @@ public class Controller implements ActionListener
 		// System.out.println("Hey! I said not to push that button!");
 		view.removeButton();
 	}
-
-	private View view;
 
 	void setView(View v){
 		view = v;

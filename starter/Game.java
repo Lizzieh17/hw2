@@ -5,9 +5,10 @@ public class Game extends JFrame
 {
 	public Game()
 	{
-		Controller controller = new Controller();
-		View view = new View(controller);
-		this.setTitle("Starting graphics!");
+		Model model = new Model();
+		Controller controller = new Controller(model);
+		View view = new View(controller, model);
+		this.setTitle("Turtle wars!");
 		this.setSize(500, 500);
 		this.setFocusable(true);
 		this.getContentPane().add(view);
