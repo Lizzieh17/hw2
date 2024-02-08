@@ -60,24 +60,30 @@ public class Controller implements ActionListener, MouseListener, KeyListener
 		}
 	}
 
-	public void keyTyped(KeyEvent e)
-	{
+	public void keyTyped(KeyEvent e){
 	}
 
 	public void update()
 	{
 		if(keyRight){
 			//call a method in model that sets the destination to destX++
-			
+			model.moveRight();
+			// System.out.println("Right pressed");
 		}
 		if(keyLeft){
 			//call a method in model that sets the destination to destX--
+			model.moveLeft();
+			// System.out.println("Left");
 		}
 		if(keyDown){
 			//do the same for destY++
+			model.moveDown();
+			// System.out.println("Down");
 		}
 		if(keyUp){
 			//do the same for destY--
+			model.moveUp();
+			// System.out.println("Up");
 		}
 	}
 }

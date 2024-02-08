@@ -19,10 +19,10 @@ public class Model
 			this.turtleX -= Math.min(4, destX + turtleX);
 		}
 		if(this.turtleY < this.destY){
-			this.turtleY += Math.min(4, destX - turtleY);
+			this.turtleY += Math.min(4, destY - turtleY);
 		}
 		else if(this.turtleY > this.destY){
-			this.turtleY -= Math.min(4, destX + turtleY);
+			this.turtleY -= Math.min(4, destY+ turtleY);
 		}
 	}
 
@@ -42,15 +42,19 @@ public class Model
 		return turtleY;
 	}
 	public void moveRight(){
-
+		this.destX += 4;
+		// setDestination(destX, destY);
 	}
 	public void moveLeft(){
-		
+		this.destX += -4;
+		// setDestination(destX, destY);
 	}
 	public void moveUp(){
-		
+		this.destY += 4;
+		// setDestination(destX, destY);
 	}
 	public void moveDown(){
-		
+		this.destY += -4;
+		// setDestination(destX, destY);
 	}
 }
