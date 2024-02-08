@@ -16,13 +16,13 @@ public class Model
 			this.turtleX += Math.min(4, destX - turtleX);
 		}
 		else if(this.turtleX > this.destX){
-			this.turtleX -= Math.min(4, destX - turtleX);
+			this.turtleX -= Math.min(4, destX + turtleX);
 		}
 		if(this.turtleY < this.destY){
-			this.turtleY += Math.min(4, destX - turtleX);
+			this.turtleY += Math.min(4, destX - turtleY);
 		}
 		else if(this.turtleY > this.destY){
-			this.turtleY -= Math.min(4, destX - turtleX);
+			this.turtleY -= Math.min(4, destX + turtleY);
 		}
 	}
 
@@ -40,5 +40,17 @@ public class Model
 	public int getTurtleY()
 	{
 		return turtleY;
+	}
+	public void moveRight(){
+
+	}
+	public void moveLeft(){
+		
+	}
+	public void moveUp(){
+		
+	}
+	public void moveDown(){
+		
 	}
 }

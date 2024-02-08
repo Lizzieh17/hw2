@@ -21,7 +21,6 @@ public class Controller implements ActionListener, MouseListener, KeyListener
 
 	public void actionPerformed(ActionEvent e)
 	{
-		// System.out.println("Hey! I said not to push that button!");
 		view.removeButton();
 	}
 

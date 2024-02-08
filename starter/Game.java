@@ -30,7 +30,7 @@ public class Game extends JFrame
 
 	public void run(){
 		while(true){
-			//controller.update();
+			controller.update();
 			model.update();
 			view.repaint(); // This will indirectly call View.paintComponent
 			Toolkit.getDefaultToolkit().sync(); // Updates screen
