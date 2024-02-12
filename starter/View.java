@@ -1,10 +1,15 @@
+/*
+ * Lizzie Howell
+ * 2/12/2024
+ * Assignment 2 - Turtle Wars!
+ */
 import javax.swing.JPanel;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
-import java.io.IOException;
+//import java.io.IOException;
 import java.io.File;
 import javax.swing.JButton;
 

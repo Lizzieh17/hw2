@@ -1,3 +1,8 @@
+/*
+ * Lizzie Howell
+ * 2/12/2024
+ * Assignment 2 - Turtle Wars!
+ */
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
@@ -66,24 +71,16 @@ public class Controller implements ActionListener, MouseListener, KeyListener
 	public void update()
 	{
 		if(keyRight){
-			//call a method in model that sets the destination to destX++
 			model.moveRight();
-			// System.out.println("Right pressed");
 		}
 		if(keyLeft){
-			//call a method in model that sets the destination to destX--
 			model.moveLeft();
-			// System.out.println("Left");
 		}
 		if(keyDown){
-			//do the same for destY++
 			model.moveDown();
-			// System.out.println("Down");
 		}
 		if(keyUp){
-			//do the same for destY--
 			model.moveUp();
-			// System.out.println("Up");
 		}
 	}
 }

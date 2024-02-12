@@ -1,3 +1,8 @@
+/*
+ * Lizzie Howell
+ * 2/12/2024
+ * Assignment 2 - Turtle Wars!
+ */
 import javax.swing.JFrame;
 import java.awt.Toolkit;
 
